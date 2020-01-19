@@ -1,0 +1,103 @@
+.bg-block {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.visual {
+    &-section {
+        padding: 59px 0;
+        background-image: url(../../images/visual-bg.jpg);
+        
+                .input-holder {
+            position: relative;
+            width: 670px;
+            margin-bottom: 10px;
+
+            @include media('<=768px'){
+                width: 600px;
+            }
+
+            @include media('<=690px'){
+                width: 100%;
+            }
+            
+            .search-btn {
+                position: absolute;
+                top: 52%;
+                right: 20px;
+                transform: translateY(-50%);
+                font-size: 20px;
+                color: #78909c;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;    
+            }
+              
+            input {
+                @include animate(box-shadow);
+                @include placeholder {
+                color: #90a4ae;
+                }
+        
+                font-size: $product_category_fs;
+                border: none;
+                border-radius: 3px;
+                width: 100%;
+                height: 56px;
+                padding: 15px 25px;
+                box-shadow: 0 1px 10px rgba(100, 100, 100, 0.75);
+                
+                &:focus,&:active {
+                    box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
+                    outline: none;
+                }
+        
+            }
+        }
+    }
+
+    &-head {
+        font-size: $h1_fs;
+        margin: 0 0 35px;
+        color: $white;
+        display: none;
+    
+        @include media('<=1024px'){
+            margin: 0 0 25px;
+        }
+        @include media('<=768px'){
+            font-size: 32px;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+    
+        @include media('<=550px'){
+            font-size: 28px;
+            margin: 0 0 15px;
+        }
+    }
+
+    &-h {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 25px;
+
+        @include media('<=1024px'){
+            font-size: 18px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        @include media('<=768px'){
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        @include media('<=550px'){
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+    }
+}

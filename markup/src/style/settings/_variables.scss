@@ -1,0 +1,143 @@
+// --------------------- Colors
+
+$white: #fff;
+$black: #000;
+$gray-dark: #242424;
+$gray: #49505a;
+$gray-light: #f2f2f5;
+$gray-lighter: #dcdfe5;
+$blue: #21ace3;
+$red: #ed3237;
+$green: #42cc42;
+$orange: #fe802d;
+
+$main-color: $blue;
+
+$nav-color: $gray;
+$nav-color-hover: darken($nav-color, 10%);
+
+$link-color: $main-color;
+$link-color-hover: darken($link-color, 10%);
+
+$bg-color-base: $white;
+$bg-color-add: $gray-light;
+
+$text-color: $gray;
+$heading-color: $gray-dark;
+
+
+// Else (Здесь может быть: отступы, стили для таблиц, радиус, тени. В СКОБКАХ УДАЛИТЬ И ПЕРЕНЕСТИ ЭТУ ИНФУ В ДОКУМЕНТАЦИЮ)
+$b-radius-base: 5px;
+
+$pad-base: 0 15px;
+
+
+//  Buttons
+$btn-main-color: $white;
+$btn-main-bg: $main-color;
+$btn-main-bg-hover: darken($btn-main-bg, 10%);
+
+$btn-success-color: $white;
+$btn-success-bg: $green;
+$btn-success-bg-hover: darken($btn-success-bg, 10%);
+
+// Forms
+$input-bg: $white;
+$input-color: $black;
+$input-b-radius: $b-radius-base;
+$input-border: $blue;
+$input-border-focus: darken($input-border, 20%);
+
+// Media
+$desktop-lg: 1480px;
+$desktop-md: 1200px;
+$desktop: 1024px;
+$tablet: 768px;
+$phone: 640px;
+
+// Media desktop first 
+$desktop-lg-df: 1449px;
+$desktop-mdl-df: 1200px;
+$desktop-md-df: 1179px;
+$desktop-df: 1023px;
+$tablet-df: 767px;
+$phone-df: 639px;
+
+// --------------------- Fonts size
+
+$f-size-base: 14px;
+$line-height-base: 1.2;
+
+$f-size-h1: 36px;
+$f-size-h2: 28px;
+
+// --------------------- Font settings
+
+// font-family (Названия в переменных должны соответствовать названиям папок и названиям файлов)
+// Все шрифты загружаются в папку ./src/fonts 
+
+$ff-default: 'ClearSansBold';
+$ff-stress: 'ClearSansItalic';
+
+// font-weight
+$fw-bold: bold;
+$fw-italic: italic;
+
+$font-type: ($ff-stress: $fw-italic, $ff-default: $fw-bold );
+
+// пример 
+//body {
+//    @extend %#{$ff-default};
+//}
+
+
+$header_color: #fff;
+
+$conatiner_bg_light: #f4f5f6;
+$conatiner_bg_dark: #263238;;
+
+$product_img_bg: #d4d4d4;
+$slider_bg: #fff;
+
+$label_color: #8bc34a;
+$active_color: #e74c3c;
+$stars_color: #ffa726;
+$footer-col-first: #729e4c;
+
+/* --- Fonts --- */
+
+$def_font: 'roboto_medium';
+$def_h_font: 'roboto_bold';
+$def_p_font: 'roboto_regular';
+
+$footer_h_font: 'raleway_bold';
+$footer_info_font: 'lato_semibold';
+
+/* --- Font Color --- */
+
+$title_font_color: #fff;
+$font_color_dark: #263238;
+$font_color_light: #546e7a;
+$font_p_color: #b0bec5;
+$font-footer-color: #b7c3c8;
+
+/* --- Font Size`s --- */
+
+$h1_fs: 48px; // header
+$h2_fs: 36px; // container head
+$h3_fs: 24px; // choose us & tutorial
+$h4_fs: 22px; // used in footer
+$title_p_fs: 20px;
+$def_p_fs: 15px;
+
+$header_menu_fs: 14px; // header menu, search and butons in newest products
+$header_info_fs: 15px; 
+$header_buton_fs: 12px;
+$footer-contact: 14px;
+
+$product_title_fs: 18px;
+$product_price_fs: 20px;
+$product_category_fs: 14px;
+$product_vendor_fs: 14px;
+
+//--------------------------------------
